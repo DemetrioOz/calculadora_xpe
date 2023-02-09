@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 10px;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.calculadora input[type="number"] {
+  width: 50vh;
+  height: 50px;
+  font-size: 18px;
+  margin: 10px;
+  text-align: center;
+  color: black;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: black;
+}
+
+.calculadora button {
+  width: 50vh;
+  height: 50px;
+  font-size: 18px;
+  margin-left: 20vh;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.children {
+  margin: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  transition: 0.3s;
+  height: 10vh;
+  width: 55vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.children:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: larger;
+  background-color:rgba(0, 0, 0, 0.2);
+}
