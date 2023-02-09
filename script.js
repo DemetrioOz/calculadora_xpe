@@ -65,8 +65,8 @@ const calculate = document.getElementById("calcula");
 
 calculate.addEventListener("click", function (event) {
   event.preventDefault();
-  const num1 = document.getElementById("numero1").value;
-  const num2 = document.getElementById("numero2").value;
+  const num1 = Number(document.getElementById("numero1").value);
+  const num2 = Number(document.getElementById("numero2").value);
 
   if (num1 === "" || num2 === "") {
     alert("Preencha os inputs");
